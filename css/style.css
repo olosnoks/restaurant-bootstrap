@@ -1,0 +1,12 @@
+/* linear gradient for top nav section
+    top: #f15f52
+    bottom: #e54839
+*/
+
+:root {
+    --prim: #df473a;
+    --sec: #fff8ce;
+    --textColor: #691e1b;
+    --offerHeader: #999e03;
+    --clientBg: #66635e;
+}
