@@ -1,6 +1,11 @@
-/* linear gradient for top nav section
+/* linear gradient for top nav section:
     top: #f15f52
     bottom: #e54839
+
+font-family: 'Courier Prime', monospace;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Yesteryear', cursive;
+
 */
 
 :root {
@@ -8,5 +13,64 @@
     --sec: #fff8ce;
     --textColor: #691e1b;
     --offerHeader: #999e03;
+    --figureBg: #f5eedc;
+    --offerBg: #f9f5ea;
     --clientBg: #66635e;
+    --clientText: #aeaba6;
+    --infoBg: #5c5954;
+    --colophonBg: #413e39;
+    --logoText: 'Work Sans', sans-serif;
+    --topNav: linear-gradient(
+        to bottom,
+        #f15f52,
+        #e54839
+    );
+}
+
+/* generic */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+.social-section {
+    background-color: var(--prim);
+}
+
+.soc-link {
+    color: var(--sec);
+    transition: color 0.5s ease;
+}
+
+.soc-link:hover {
+    color: var(--clientText)
+}
+
+.top-nav-section {
+    padding: 30px 00
+    
+    background-color: var(--topNav);
+}
+
+.logo {
+    color: #fff;
+    font-family: var(--logoText);
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.drop-down select {
+    margin: 10px auto;
+    padding: 10px 0;
+    width: 100%;
 }
