@@ -19,7 +19,7 @@ font-family: 'Yesteryear', cursive;
     --clientText: #aeaba6;
     --infoBg: #5c5954;
     --colophonBg: #413e39;
-    --logoText: 'Work Sans', sans-serif;
+    --workSans: 'Work Sans', sans-serif;
     --topNav: linear-gradient(
         to bottom,
         #f15f52,
@@ -55,22 +55,65 @@ body {
 }
 
 .top-nav-section {
-    padding: 30px 00
-    
+    padding: 40px 0;
     background-color: var(--topNav);
 }
 
 .logo {
     color: #fff;
-    font-family: var(--logoText);
+    font-family: var(--workSans);
     font-size: 36px;
     font-weight: 700;
     text-transform: capitalize;
-    text-align: center;
 }
 
-.drop-down select {
+@media (max-width: 767px) {
+    .logo {
+        font-size: 72px;
+    }
+}
+
+.dropdown-div select {
     margin: 10px auto;
     padding: 10px 0;
     width: 100%;
+}
+
+.slogan-section {
+    padding: 40px 0;
+    background-color: var(--sec);
+}
+
+.slogan-text {
+    color: var(--textColor);
+    font-family: var(--workSans);
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 / 300)));
+    font-style: italic;
+    font-weight: 100;
+}
+
+@media (max-width: 767px) {
+    .slogan-text {
+        font-size: 36px;
+    }
+}
+
+form {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 30px;
+    border: 1px solid black;
+}
+
+input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    background-color: var(--sec);
+    border-color: var(--textColor);
 }
