@@ -147,10 +147,6 @@ form {
     border: 1px solid black;
 }
 
-@media () {
-
-}
-
 input {
     position: absolute;
     top: 0;
@@ -392,5 +388,5 @@ input {
 
 .footer-logo {
     color: #fff;
-    font-family: var(--)
+    font-family: var(--clientText);
 }
