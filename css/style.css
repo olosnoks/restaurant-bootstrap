@@ -8,6 +8,8 @@ font-family: 'Yesteryear', cursive;
 
 */
 
+/* generic */
+
 :root {
     --prim: #df473a;
     --sec: #fff8ce;
@@ -27,7 +29,15 @@ font-family: 'Yesteryear', cursive;
     );
 }
 
-/* generic */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
 
 * {
     box-sizing: border-box;
@@ -39,12 +49,28 @@ body {
     scroll-behavior: smooth;
 }
 
+.nav-link:hover {
+    color: white;
+}
+
+.soc-list .icon:hover {
+    color: white;
+}
+
 ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-/* header */
+/* close generic 
+   .+------+     +------+     +------+     +------+     +------+.
+ .' |      |    /|      |     |      |     |      |\    |      | `.
++   |   &  |   + |   S  |     +   K  +     |   O  | +   |   N  |   +
+|   |      |   | |      |     |      |     |      | |   |      |   |
+|  .+------+   | +------+     +------+     +------+ |   +------+.  |
+|.'      .'    |/      /      |      |      \      \|    `.      `.|
++------+'      +------+       +------+       +------+      `+------+
+ header */
 
 .social-section {
     background-color: var(--prim);
@@ -120,7 +146,7 @@ ul {
 .slogan-text {
     color: var(--textColor);
     font-family: var(--workSans);
-    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 / 300)));
+    /* font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 / 300))); */
     font-style: italic;
     font-weight: 100;
 }
@@ -144,7 +170,7 @@ form {
     transform: translateX(-50%);
     width: 80%;
     height: 30px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 input {
@@ -158,9 +184,49 @@ input {
     border-color: var(--textColor);
 }
 
-/* close header */
+.search-bar {
+    margin-top: 25px;
+    margin-left: 425px;
+}
 
-/* main */
+.icon-search {
+    margin-left: -30px;
+    margin-top: -2px;
+    color: black;
+}
+
+/* close header 
+                        .,,uod8B8bou,,.
+              ..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:.
+         ,=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||
+         !...:!TVBBBRPFT||||||||||!!^^""'   ||||
+         !.......:!?|||||!!^^""'            ||||
+         !.........||||   .-"""""""-.       ||||
+         !.........||||^\/  _.   _.  \/^\   ||||
+         !.........||||(   /__\ /__\   )/   ||||
+         !.........||||\,  \o_/_\o_/ ,/     ||||
+         !.........|||| \    (_)     /      ||||
+         !.........||||  `-.'==='.- '       ||||
+         `.........||||   __) - (__    noks,||||
+          .;.......||||  /  `~~~`  \  _.-!!|||||
+   .,uodWBBBBb.....|||| /      _.-!!|||||||||!:'
+!YBBBBBBBBBBBBBBb..!|||:..-!!|||||||!iof68BBBBBb....
+!..YBBBBBBBBBBBBBBb!!||||||||!iof68BBBBBBRPFT?!::   `.
+!....YBBBBBBBBBBBBBBbaaitf68BBBBBBRPFT?!:::::::::     `.
+!......YBBBBBBBBBBBBBBBBBBBRPFT?!::::::;:!^"`;:::       `.
+!........YBBBBBBBBBBRPFT?!::::::::::^''...::::::;         iBBbo.
+`..........YBRPFT?!::::::::::::::::::::::::;iof68bo.      WBBBBbo.
+  `..........:::::::::::::::::::::::;iof688888888888b.     `YBBBP^'
+    `........::::::::::::::::;iof688888888888888888888b.     `
+      `......:::::::::;iof688888888888888888888888888888b.
+        `....:::;iof688888888888888888888888888888888899fT!
+          `..::!8888888888888888888888888888888899fT|!^"'
+            `' !!988888888888888888888888899fT|!^"'
+                `!!8888888888888888899fT|!^"'
+                  `!988888888899fT|!^"'
+                    `!9899fT|!^"'
+                      `!^"'
+ main */
 
 .carousel-section {
     position: relative;
@@ -299,9 +365,34 @@ input {
     color: var(--prim);
 } 
 
-/* close main */
-
-/* footer */
+/* close main 
+ __________________________
+|OFFo oON                  |
+| .----------------------. |
+| |  .----------------.  | |
+| |  | -noks-    /\/\ |  | |
+| |))|           \  / |  | |
+| |  |  /\︿╱\    \/  |  | |
+| |  |  \0_ 0/\/╱\\╱  |  | |
+| |  |...\▁︹_/.......|  | |
+| |  |~~~~~~~~~~~~~~~~|  | |    
+| |  |^^^^^^^^^^^^^^^^|  | |    
+| |  '----------------'  | |      
+| |__GAME BOY____________/ |    .-"""""""-.
+|          ________        |/^\/  _.   _.  \/^\
+|    .    (Nintendo)       |\(   /__\ /__\   )/
+|  _| |_   """"""""   .-.  | \,  \o_/_\o_/  ,/
+|-[_   _]-       .-. (   ) |  \    (_)     /
+|   |_|         (   ) '-'  |    `-.'==='.-'
+|    '           '-'   A   |     __) - (__
+|                 B        |    /  `~~~`  \
+|          ___   ___       |   /  /     \  \
+|         (___) (___)  ,., |   \ :       ; /
+|        select start ;:;: |    \|==(*)==|/
+|                    ,;:;: /      \  |  /
+|                   ,:;:'.'     ___)=|=(___
+'-----------------------`      {____/ \____}
+ footer */
 
 .client-section {
     padding: 80px 0;
@@ -389,4 +480,112 @@ input {
 .footer-logo {
     color: #fff;
     font-family: var(--clientText);
+}
+
+/* close index page 
+                   .------.____
+                .-'       \ ___)
+             .-'         \\\
+          .-'        ___  \\)
+       .-'          /  (\  |)
+                __  \  ( | |
+               /  \  \__'| |
+              /    \____).-'
+            .'       /   |
+           /     .  /    |
+         .'     / \/     |
+        /      /   \     |
+              /    /    _|_
+              \   /    /\ /\
+               \ /    /__v__\
+                '    |       |
+                     |     .#|
+                     |#.  .##|
+                     |#######|
+                     |#######|
+                       (
+                        )     (
+                 ___...(-------)-....___
+             .-""       )    (          ""-.
+       .-'``'|-._             )         _.-|
+      /  .--.|   `""---...........---""`   |
+     /  /    |                             |
+     |  |    |                             |
+      \  \   |                             |
+       `\ `\ |                             |
+         `\ `|                             |
+         _/ /\                             /
+        (__/  \                           /
+     _..---""` \                         /`""---.._
+  .-'           \                       /          '-.
+ :               `-.__             __.-'              :
+ :                  ) ""---...---"" (                 :
+  '._               `"--...___...--"`              _.'
+    \""--..__                              __..--""/
+     '._     """----.....______.....----"""     _.'
+        `""--..,,_____            _____,,..--""`
+                      `"""----"""`
+ about page */
+
+.about-us-section {
+    background-color: var(--figureSec);
+}
+
+.about-header {
+    padding: 15px;
+    color: var(--textColor);
+}
+
+.about-header:before {
+    content: "";
+    display: block;
+    width: 600px;
+    height: 2px;
+    background: var(--textColor);
+    left: 0;
+    top: 31%;
+    position: absolute;
+}
+
+.about-header:after {
+    content: "";
+    display: block;
+    width: 600px;
+    height: 2px;
+    background: var(--textColor);
+    right: 0;
+    top: 31%;
+    position: absolute;
+}
+
+.about-us-img {
+    margin-left: 450px;
+    padding: 20px;
+}
+
+.about-us-text {
+    padding: 15px;
+    text-indent: 25px;
+    text-align: justify;
+    background-color: var(--figureSec);
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .search-bar {
+        margin: 0;
+        padding-left: 155px;
+    }
+    .info-section .container {
+        margin: 0 auto;
+    }
+    .footer-info {
+        padding-bottom: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .search-bar {
+        margin-top: -55px;
+        padding-left: 75px;
+    }
 }
